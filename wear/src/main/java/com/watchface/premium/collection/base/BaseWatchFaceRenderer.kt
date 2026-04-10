@@ -90,7 +90,8 @@ abstract class BaseWatchFaceRenderer(
         // Color scheme
         val colorSetting = schema.userStyleSettings.firstOrNull { it.id.value == StyleIds.COLOR_SCHEME }
         if (colorSetting != null) {
-            val selectedId = (style[colorSetting] as? ListOption)?.id?.value
+            val selectedIdBytes = (style[colorSetting] as? ListOption)?.id?.value
+            val selectedId = selectedIdBytes?.let { String(it, Charsets.UTF_8) }
             currentColorScheme = colorSchemes.firstOrNull { it.id == selectedId } ?: colorSchemes.first()
         }
 

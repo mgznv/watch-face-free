@@ -53,9 +53,9 @@ dependencies {
     implementation("androidx.wear.watchface:watchface-editor:1.2.1")
 
     // Wear Compose (picker + settings UI)
-    implementation("androidx.wear.compose:compose-material3:1.3.1")
-    implementation("androidx.wear.compose:compose-foundation:1.3.1")
-    implementation("androidx.wear.compose:compose-navigation:1.3.0")
+    implementation("androidx.wear.compose:compose-material3:1.6.1")
+    implementation("androidx.wear.compose:compose-foundation:1.6.1")
+    implementation("androidx.wear.compose:compose-navigation:1.6.1")
 
     // Compose BOM – pins compose-ui, compose-runtime, etc.
     implementation(platform("androidx.compose:compose-bom:2024.12.01"))
