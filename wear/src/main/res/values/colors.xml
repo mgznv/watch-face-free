@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App-level colors -->
+    <color name="background_dark">#FF000000</color>
+    <color name="surface_dark">#FF1A1A1A</color>
+    <color name="on_surface">#FFFFFFFF</color>
+    <color name="accent_gold">#FFFFD700</color>
+    <color name="accent_cyan">#FF00E5FF</color>
+    <color name="accent_green">#FF00FF7F</color>
+</resources>

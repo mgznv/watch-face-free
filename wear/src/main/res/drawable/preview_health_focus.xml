@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preview: Health Focus – health ring, heart rate dominant -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp" android:height="200dp"
+    android:viewportWidth="200" android:viewportHeight="200">
+    <path android:fillColor="#0A0A0F" android:pathData="M100,100 m-100,0 a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0" />
+    <!-- Activity ring outer (move) -->
+    <path android:fillColor="#00000000" android:strokeColor="#FF2D55" android:strokeWidth="8"
+        android:pathData="M100,100 m-85,0 a85,85 0 1,0 170,0 a85,85 0 1,0 -170,0" />
+    <!-- Activity ring middle (exercise) -->
+    <path android:fillColor="#00000000" android:strokeColor="#4CD964" android:strokeWidth="8"
+        android:pathData="M100,100 m-72,0 a72,72 0 1,0 144,0 a72,72 0 1,0 -144,0" />
+    <!-- Activity ring inner (stand) -->
+    <path android:fillColor="#00000000" android:strokeColor="#5AC8FA" android:strokeWidth="8"
+        android:pathData="M100,100 m-59,0 a59,59 0 1,0 118,0 a59,59 0 1,0 -118,0" />
+    <!-- Heart icon center -->
+    <path android:fillColor="#FF2D55"
+        android:pathData="M100,92 C100,88 94,84 90,88 C86,92 90,100 100,108 C110,100 114,92 110,88 C106,84 100,88 100,92 Z" />
+</vector>

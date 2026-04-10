@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preview: Art Deco Gold – geometric gold patterns -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp" android:height="200dp"
+    android:viewportWidth="200" android:viewportHeight="200">
+    <path android:fillColor="#0E0C08" android:pathData="M100,100 m-100,0 a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0" />
+    <!-- Gold outer ring -->
+    <path android:fillColor="#00000000" android:strokeColor="#C9A84C" android:strokeWidth="4"
+        android:pathData="M100,100 m-92,0 a92,92 0 1,0 184,0 a92,92 0 1,0 -184,0" />
+    <!-- Inner deco ring -->
+    <path android:fillColor="#00000000" android:strokeColor="#C9A84C" android:strokeWidth="1.5"
+        android:pathData="M100,100 m-78,0 a78,78 0 1,0 156,0 a78,78 0 1,0 -156,0" />
+    <!-- Geometric deco corner fills -->
+    <path android:fillColor="#C9A84C" android:pathData="M100,18 L106,28 L100,24 L94,28 Z" />
+    <path android:fillColor="#C9A84C" android:pathData="M182,100 L172,106 L176,100 L172,94 Z" />
+    <path android:fillColor="#C9A84C" android:pathData="M100,182 L94,172 L100,176 L106,172 Z" />
+    <path android:fillColor="#C9A84C" android:pathData="M18,100 L28,94 L24,100 L28,106 Z" />
+    <!-- Gold hands -->
+    <path android:strokeColor="#FFD700" android:strokeWidth="4" android:strokeLineCap="round"
+        android:pathData="M100,100 L118,60" />
+    <path android:strokeColor="#C9A84C" android:strokeWidth="2.5" android:strokeLineCap="round"
+        android:pathData="M100,100 L100,26" />
+    <path android:fillColor="#FFD700" android:pathData="M100,100 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+</vector>

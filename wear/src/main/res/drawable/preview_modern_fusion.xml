@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preview: Modern Fusion – ultra-thin hands over integrated digital display -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp" android:height="200dp"
+    android:viewportWidth="200" android:viewportHeight="200">
+    <path android:fillColor="#111118" android:pathData="M100,100 m-100,0 a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0" />
+    <!-- Thin accent ring -->
+    <path android:fillColor="#00000000" android:strokeColor="#6C63FF" android:strokeWidth="1.5"
+        android:pathData="M100,100 m-90,0 a90,90 0 1,0 180,0 a90,90 0 1,0 -180,0" />
+    <!-- Digital time area -->
+    <path android:strokeColor="#6C63FF" android:strokeWidth="1.5"
+        android:pathData="M58,86 L142,86 L142,114 L58,114 Z" />
+    <!-- Ultra-thin hands overlaid -->
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="1.5" android:strokeLineCap="round"
+        android:pathData="M100,100 L116,58" />
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="1" android:strokeLineCap="round"
+        android:pathData="M100,100 L100,26" />
+    <path android:strokeColor="#6C63FF" android:strokeWidth="0.8" android:strokeLineCap="round"
+        android:pathData="M100,108 L100,22" />
+    <path android:fillColor="#6C63FF" android:pathData="M100,100 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+</vector>

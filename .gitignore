@@ -1,0 +1,70 @@
+# Built application files
+*.apk
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+build/
+*/build/
+.gradle/
+
+# Signing files
+*.jks
+*.keystore
+*.sign
+signing.config
+
+# IntelliJ
+*.iml
+.idea/
+.idea/workspace.xml
+*.iws
+
+# Gradle
+.gradle/
+gradle-app.setting
+
+# Local configuration (SDK paths, etc)
+local.properties
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Debug builds
+*debug*.apk
+*debug*.aab
+
+# Release builds (keep these if you commit them)
+# *release*.apk
+# *release*.aab
+
+# Log files
+*.log
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Google Services (DO NOT commit your google-services.json)
+# google-services.json
+
+# Crashlytics
+fabric.properties
+
+# Backup files
+*.bak

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preview: Minimal Elegance – cream background, ultra-thin hands -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp" android:height="200dp"
+    android:viewportWidth="200" android:viewportHeight="200">
+    <path android:fillColor="#F5F0E8" android:pathData="M100,100 m-100,0 a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0" />
+    <!-- Minimal hour dots -->
+    <path android:fillColor="#888888" android:pathData="M100,14 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+    <path android:fillColor="#888888" android:pathData="M100,182 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+    <path android:fillColor="#888888" android:pathData="M14,100 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+    <path android:fillColor="#888888" android:pathData="M184,100 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+    <!-- Hour hand – thin -->
+    <path android:strokeColor="#333333" android:strokeWidth="1.5" android:strokeLineCap="round"
+        android:pathData="M100,100 L116,58" />
+    <!-- Minute hand – thin -->
+    <path android:strokeColor="#333333" android:strokeWidth="1" android:strokeLineCap="round"
+        android:pathData="M100,100 L100,24" />
+    <!-- Second hand – rose gold -->
+    <path android:strokeColor="#C49A6C" android:strokeWidth="0.8" android:strokeLineCap="round"
+        android:pathData="M100,112 L100,20" />
+    <path android:fillColor="#C49A6C" android:pathData="M100,100 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+</vector>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preview: Pilot Heritage – black dial, bold Arabic numerals -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp" android:height="200dp"
+    android:viewportWidth="200" android:viewportHeight="200">
+    <path android:fillColor="#0A0A0A" android:pathData="M100,100 m-100,0 a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0" />
+    <path android:fillColor="#00000000" android:strokeColor="#555555" android:strokeWidth="4"
+        android:pathData="M100,100 m-90,0 a90,90 0 1,0 180,0 a90,90 0 1,0 -180,0" />
+    <!-- Bold hour/minute hands -->
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="5" android:strokeLineCap="round"
+        android:pathData="M100,100 L118,60" />
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="3.5" android:strokeLineCap="round"
+        android:pathData="M100,100 L100,26" />
+    <path android:strokeColor="#FF6600" android:strokeWidth="1.5" android:strokeLineCap="round"
+        android:pathData="M100,116 L100,22" />
+    <!-- Triangle 12 marker -->
+    <path android:fillColor="#FFFFFF" android:pathData="M100,12 L96,20 L104,20 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M100,100 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+</vector>

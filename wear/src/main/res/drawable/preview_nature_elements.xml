@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preview: Nature Elements – organic leaf textures, earthy tones -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp" android:height="200dp"
+    android:viewportWidth="200" android:viewportHeight="200">
+    <path android:fillColor="#1A2B1A" android:pathData="M100,100 m-100,0 a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0" />
+    <!-- Organic ring pattern -->
+    <path android:fillColor="#00000000" android:strokeColor="#4A7C59" android:strokeWidth="3"
+        android:pathData="M100,100 m-85,0 a85,85 0 1,0 170,0 a85,85 0 1,0 -170,0" />
+    <!-- Leaf accents (simplified bezier leaves) -->
+    <path android:fillColor="#4A7C59"
+        android:pathData="M100,20 C95,30 88,35 82,28 C90,22 100,20 100,20 Z" />
+    <path android:fillColor="#6AAB7A"
+        android:pathData="M100,20 C105,30 112,35 118,28 C110,22 100,20 100,20 Z" />
+    <path android:fillColor="#4A7C59"
+        android:pathData="M180,100 C170,95 165,88 172,82 C178,90 180,100 180,100 Z" />
+    <path android:fillColor="#6AAB7A"
+        android:pathData="M180,100 C170,105 165,112 172,118 C178,110 180,100 180,100 Z" />
+    <!-- Natural hands -->
+    <path android:strokeColor="#A8D5A2" android:strokeWidth="4" android:strokeLineCap="round"
+        android:pathData="M100,100 L118,60" />
+    <path android:strokeColor="#8BBF84" android:strokeWidth="2.5" android:strokeLineCap="round"
+        android:pathData="M100,100 L100,26" />
+    <path android:strokeColor="#FFD700" android:strokeWidth="1.5" android:strokeLineCap="round"
+        android:pathData="M100,112 L100,22" />
+    <path android:fillColor="#6AAB7A" android:pathData="M100,100 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+</vector>

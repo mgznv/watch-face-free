@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preview: Dive Master – dive bezel simulation -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp" android:height="200dp"
+    android:viewportWidth="200" android:viewportHeight="200">
+    <!-- Dive bezel (outer ring) -->
+    <path android:fillColor="#1A2A1A" android:pathData="M100,100 m-100,0 a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0" />
+    <!-- Bezel markers -->
+    <path android:fillColor="#00A86B" android:pathData="M100,5 L104,12 L100,10 L96,12 Z" />
+    <path android:fillColor="#00A86B" android:pathData="M100,100 m-92,0 a2,8 0 0,1 4,0" />
+    <!-- Main dial -->
+    <path android:fillColor="#0A1A0A" android:pathData="M100,100 m-82,0 a82,82 0 1,0 164,0 a82,82 0 1,0 -164,0" />
+    <!-- Bold minute track -->
+    <path android:fillColor="#00000000" android:strokeColor="#003322" android:strokeWidth="6"
+        android:pathData="M100,100 m-76,0 a76,76 0 1,0 152,0 a76,76 0 1,0 -152,0" />
+    <!-- Bold luminous hands -->
+    <path android:strokeColor="#00FF88" android:strokeWidth="7" android:strokeLineCap="round"
+        android:pathData="M100,100 L118,60" />
+    <path android:strokeColor="#00FF88" android:strokeWidth="5" android:strokeLineCap="round"
+        android:pathData="M100,100 L100,28" />
+    <path android:strokeColor="#FF3300" android:strokeWidth="2" android:strokeLineCap="round"
+        android:pathData="M100,118 L100,22" />
+    <path android:fillColor="#00FF88" android:pathData="M100,100 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+</vector>

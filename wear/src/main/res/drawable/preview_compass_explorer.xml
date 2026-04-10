@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preview: Compass Explorer – compass rose with time -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp" android:height="200dp"
+    android:viewportWidth="200" android:viewportHeight="200">
+    <path android:fillColor="#1A1208" android:pathData="M100,100 m-100,0 a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0" />
+    <!-- Compass rose background -->
+    <path android:fillColor="#00000000" android:strokeColor="#8B7340" android:strokeWidth="1.5"
+        android:pathData="M100,100 m-85,0 a85,85 0 1,0 170,0 a85,85 0 1,0 -170,0" />
+    <!-- Cardinal directions crosshairs -->
+    <path android:strokeColor="#8B7340" android:strokeWidth="1"
+        android:pathData="M100,20 L100,180 M20,100 L180,100" />
+    <!-- Compass N needle -->
+    <path android:fillColor="#CC3333" android:pathData="M100,100 L96,52 L100,44 L104,52 Z" />
+    <!-- Compass S needle -->
+    <path android:fillColor="#CCCCCC" android:pathData="M100,100 L104,148 L100,156 L96,148 Z" />
+    <!-- N label -->
+    <path android:strokeColor="#CC3333" android:strokeWidth="2"
+        android:pathData="M96,28 L96,18 L104,28 L104,18" />
+    <!-- Outer ring tick marks -->
+    <path android:strokeColor="#8B7340" android:strokeWidth="2"
+        android:pathData="M100,17 L100,22 M183,100 L178,100 M100,183 L100,178 M17,100 L22,100" />
+    <path android:fillColor="#8B7340" android:pathData="M100,100 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+</vector>

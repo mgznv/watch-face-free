@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WatchFace Premium Collection</string>
+
+    <!-- Watch face display names (shown in system picker) -->
+    <string name="face_classic_chronograph">Classic Chronograph</string>
+    <string name="face_minimal_elegance">Minimal Elegance</string>
+    <string name="face_pilot_heritage">Pilot Heritage</string>
+    <string name="face_neon_sport">Neon Sport</string>
+    <string name="face_tech_data">Tech Data</string>
+    <string name="face_health_focus">Health Focus</string>
+    <string name="face_dual_time">Dual Time</string>
+    <string name="face_modern_fusion">Modern Fusion</string>
+    <string name="face_abstract_circles">Abstract Circles</string>
+    <string name="face_cosmic_pulse">Cosmic Pulse</string>
+    <string name="face_art_deco_gold">Art Deco Gold</string>
+    <string name="face_trail_run">Trail Run</string>
+    <string name="face_dive_master">Dive Master</string>
+    <string name="face_compass_explorer">Compass Explorer</string>
+    <string name="face_gradient_flow">Gradient Flow</string>
+    <string name="face_monoline">Monoline</string>
+    <string name="face_glassmorphism">Glassmorphism</string>
+    <string name="face_retro_pixel">Retro Pixel</string>
+    <string name="face_stealth_black">Stealth Black</string>
+    <string name="face_nature_elements">Nature Elements</string>
+
+    <!-- Style settings shown in the watch face editor -->
+    <string name="setting_color_scheme">Color Style</string>
+    <string name="setting_color_scheme_desc">Choose the color palette for this watch face</string>
+    <string name="setting_show_seconds">Show Seconds</string>
+    <string name="setting_show_seconds_desc">Display the seconds hand (uses more battery)</string>
+    <string name="setting_show_date">Show Date</string>
+    <string name="setting_show_date_desc">Display the current date on the watch face</string>
+
+    <!-- Color option labels (shared across all 20 faces) -->
+    <string name="color_option_1">Style A</string>
+    <string name="color_option_2">Style B</string>
+    <string name="color_option_3">Style C</string>
+
+    <!-- Picker UI strings -->
+    <string name="picker_title">Premium Faces</string>
+    <string name="picker_tap_to_customize">Tap to customize</string>
+    <string name="picker_all_unlocked">All 20 faces included</string>
+    <string name="picker_category_analog">Analog</string>
+    <string name="picker_category_digital">Digital</string>
+    <string name="picker_category_hybrid">Hybrid</string>
+    <string name="picker_category_art">Art</string>
+    <string name="picker_category_sport">Sport</string>
+    <string name="picker_category_modern">Modern</string>
+    <string name="picker_category_themed">Themed</string>
+</resources>

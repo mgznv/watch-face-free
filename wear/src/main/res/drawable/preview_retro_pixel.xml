@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preview: Retro Pixel – 8-bit pixel art style -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp" android:height="200dp"
+    android:viewportWidth="200" android:viewportHeight="200">
+    <path android:fillColor="#000000" android:pathData="M100,100 m-100,0 a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0" />
+    <!-- Pixel grid decoration -->
+    <path android:fillColor="#00CC00" android:pathData="M82,32 L88,32 L88,38 L82,38 Z" />
+    <path android:fillColor="#00CC00" android:pathData="M112,32 L118,32 L118,38 L112,38 Z" />
+    <path android:fillColor="#00CC00" android:pathData="M32,82 L38,82 L38,88 L32,88 Z" />
+    <path android:fillColor="#00CC00" android:pathData="M162,82 L168,82 L168,88 L162,88 Z" />
+    <path android:fillColor="#00CC00" android:pathData="M32,112 L38,112 L38,118 L32,118 Z" />
+    <path android:fillColor="#00CC00" android:pathData="M162,112 L168,112 L168,118 L162,118 Z" />
+    <path android:fillColor="#00CC00" android:pathData="M82,162 L88,162 L88,168 L82,168 Z" />
+    <path android:fillColor="#00CC00" android:pathData="M112,162 L118,162 L118,168 L112,168 Z" />
+    <!-- Pixel time display (blocky) -->
+    <path android:fillColor="#003300" android:pathData="M42,84 L158,84 L158,116 L42,116 Z" />
+    <path android:fillColor="#00CC00" android:pathData="M50,90 L70,90 L70,96 L50,96 Z" />
+    <path android:fillColor="#00CC00" android:pathData="M50,96 L56,96 L56,104 L50,104 Z" />
+    <path android:fillColor="#00CC00" android:pathData="M50,104 L70,104 L70,110 L50,110 Z" />
+    <path android:fillColor="#00CC00" android:pathData="M130,90 L150,90 L150,96 L130,96 Z" />
+    <path android:fillColor="#00CC00" android:pathData="M144,96 L150,96 L150,104 L144,104 Z" />
+    <path android:fillColor="#00CC00" android:pathData="M130,104 L150,104 L150,110 L130,110 Z" />
+    <!-- Colon -->
+    <path android:fillColor="#00CC00" android:pathData="M96,94 L104,94 L104,98 L96,98 Z" />
+    <path android:fillColor="#00CC00" android:pathData="M96,102 L104,102 L104,106 L96,106 Z" />
+</vector>

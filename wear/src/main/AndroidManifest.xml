@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Required for watch face rendering -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Optional: body sensor access for HealthFocus face -->
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+
+    <!-- Identify this as a Wear OS app -->
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.DeviceDefault">
+
+        <!-- =====================================================================
+             PICKER / EDITOR ACTIVITY
+             Launched by the OS when the user taps "Customize" from the system
+             watch face picker, and also serves as the main app entry point.
+             ===================================================================== -->
+        <activity
+            android:name=".picker.WatchFacePickerActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault">
+            <!-- Main launcher so the user can open the app directly -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- Watch face editor integration -->
+            <intent-filter>
+                <action android:name="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+                <category android:name="com.google.android.wearable.watchface.category.WEARABLE_CONFIGURATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- =====================================================================
+             ANALOG FACES
+             ===================================================================== -->
+
+        <!-- 1. Classic Chronograph -->
+        <service
+            android:name=".faces.analog.ClassicChronographWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_classic_chronograph"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_classic_chronograph" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_classic_chronograph" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- 2. Minimal Elegance -->
+        <service
+            android:name=".faces.analog.MinimalEleganceWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_minimal_elegance"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_minimal_elegance" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_minimal_elegance" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- 3. Pilot Heritage -->
+        <service
+            android:name=".faces.analog.PilotHeritageWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_pilot_heritage"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_pilot_heritage" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_pilot_heritage" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- =====================================================================
+             DIGITAL FACES
+             ===================================================================== -->
+
+        <!-- 4. Neon Sport -->
+        <service
+            android:name=".faces.digital.NeonSportWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_neon_sport"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_neon_sport" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_neon_sport" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- 5. Tech Data -->
+        <service
+            android:name=".faces.digital.TechDataWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_tech_data"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_tech_data" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_tech_data" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- 6. Health Focus -->
+        <service
+            android:name=".faces.digital.HealthFocusWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_health_focus"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_health_focus" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_health_focus" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- =====================================================================
+             HYBRID FACES
+             ===================================================================== -->
+
+        <!-- 7. Dual Time -->
+        <service
+            android:name=".faces.hybrid.DualTimeWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_dual_time"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_dual_time" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_dual_time" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- 8. Modern Fusion -->
+        <service
+            android:name=".faces.hybrid.ModernFusionWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_modern_fusion"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_modern_fusion" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_modern_fusion" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- =====================================================================
+             ART FACES
+             ===================================================================== -->
+
+        <!-- 9. Abstract Circles -->
+        <service
+            android:name=".faces.art.AbstractCirclesWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_abstract_circles"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_abstract_circles" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_abstract_circles" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- 10. Cosmic Pulse -->
+        <service
+            android:name=".faces.art.CosmicPulseWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_cosmic_pulse"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_cosmic_pulse" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_cosmic_pulse" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- 11. Art Deco Gold -->
+        <service
+            android:name=".faces.art.ArtDecoGoldWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_art_deco_gold"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_art_deco_gold" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_art_deco_gold" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- =====================================================================
+             SPORT FACES
+             ===================================================================== -->
+
+        <!-- 12. Trail Run -->
+        <service
+            android:name=".faces.sport.TrailRunWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_trail_run"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_trail_run" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_trail_run" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- 13. Dive Master -->
+        <service
+            android:name=".faces.sport.DiveMasterWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_dive_master"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_dive_master" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_dive_master" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- 14. Compass Explorer -->
+        <service
+            android:name=".faces.sport.CompassExplorerWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_compass_explorer"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_compass_explorer" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_compass_explorer" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- =====================================================================
+             MODERN FACES
+             ===================================================================== -->
+
+        <!-- 15. Gradient Flow -->
+        <service
+            android:name=".faces.modern.GradientFlowWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_gradient_flow"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_gradient_flow" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_gradient_flow" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- 16. Monoline -->
+        <service
+            android:name=".faces.modern.MonolineWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_monoline"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_monoline" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_monoline" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- 17. Glassmorphism -->
+        <service
+            android:name=".faces.modern.GlassmorphismWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_glassmorphism"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_glassmorphism" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_glassmorphism" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- =====================================================================
+             THEMED FACES
+             ===================================================================== -->
+
+        <!-- 18. Retro Pixel -->
+        <service
+            android:name=".faces.themed.RetroPixelWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_retro_pixel"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_retro_pixel" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_retro_pixel" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- 19. Stealth Black -->
+        <service
+            android:name=".faces.themed.StealthBlackWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_stealth_black"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_stealth_black" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_stealth_black" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+        <!-- 20. Nature Elements -->
+        <service
+            android:name=".faces.themed.NatureElementsWatchFaceService"
+            android:exported="true"
+            android:label="@string/face_nature_elements"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.wearable.watchface.preview"
+                android:resource="@drawable/preview_nature_elements" />
+            <meta-data android:name="com.google.android.wearable.watchface.preview_circular"
+                android:resource="@drawable/preview_nature_elements" />
+            <meta-data android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
+                android:value="androidx.wear.watchface.editor.action.WATCH_FACE_EDITOR" />
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/watch_face" />
+        </service>
+
+    </application>
+</manifest>

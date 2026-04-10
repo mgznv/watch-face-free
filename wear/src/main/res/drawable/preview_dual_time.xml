@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preview: Dual Time – analog + secondary digital timezone -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp" android:height="200dp"
+    android:viewportWidth="200" android:viewportHeight="200">
+    <path android:fillColor="#1C1C28" android:pathData="M100,100 m-100,0 a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0" />
+    <path android:fillColor="#00000000" android:strokeColor="#4A4A6A" android:strokeWidth="2"
+        android:pathData="M100,100 m-88,0 a88,88 0 1,0 176,0 a88,88 0 1,0 -176,0" />
+    <!-- Analog hands -->
+    <path android:strokeColor="#E0E0FF" android:strokeWidth="5" android:strokeLineCap="round"
+        android:pathData="M100,100 L118,62" />
+    <path android:strokeColor="#B0B0DD" android:strokeWidth="3" android:strokeLineCap="round"
+        android:pathData="M100,100 L100,28" />
+    <!-- Digital secondary box -->
+    <path android:fillColor="#2A2A3D" android:pathData="M60,126 L140,126 L140,148 L60,148 Z" />
+    <path android:strokeColor="#7070AA" android:strokeWidth="1"
+        android:pathData="M60,126 L140,126 L140,148 L60,148 Z" />
+    <!-- GMT label -->
+    <path android:strokeColor="#9090BB" android:strokeWidth="2"
+        android:pathData="M70,133 L76,133 M70,137 L78,137 M70,141 L76,141" />
+    <!-- Center dot -->
+    <path android:fillColor="#7070AA" android:pathData="M100,100 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0" />
+</vector>

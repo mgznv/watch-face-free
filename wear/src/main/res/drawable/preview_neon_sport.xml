@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preview: Neon Sport – dark background, green/blue neon digital display -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp" android:height="200dp"
+    android:viewportWidth="200" android:viewportHeight="200">
+    <path android:fillColor="#050510" android:pathData="M100,100 m-100,0 a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0" />
+    <!-- Neon arc rings -->
+    <path android:fillColor="#00000000" android:strokeColor="#00FF88" android:strokeWidth="3"
+        android:pathData="M100,100 m-80,0 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" />
+    <path android:fillColor="#00000000" android:strokeColor="#0088FF" android:strokeWidth="2"
+        android:pathData="M100,100 m-70,0 a70,70 0 1,0 140,0 a70,70 0 1,0 -140,0" />
+    <!-- Digital time placeholder -->
+    <path android:fillColor="#00FF88" android:pathData="M52,80 L148,80 L148,120 L52,120 Z" />
+    <path android:fillColor="#050510" android:pathData="M55,83 L145,83 L145,117 L55,117 Z" />
+    <!-- Fake digit lines -->
+    <path android:strokeColor="#00FF88" android:strokeWidth="4"
+        android:pathData="M65,90 L75,90 M68,90 L68,100 M75,90 L75,100 M65,100 L75,100 M68,100 L68,110 M75,100 L75,110 M65,110 L75,110" />
+    <path android:strokeColor="#00FF88" android:strokeWidth="4"
+        android:pathData="M85,90 L85,110" />
+    <path android:strokeColor="#0088FF" android:strokeWidth="4"
+        android:pathData="M105,90 L115,90 L115,100 L105,100 L105,110 L115,110" />
+    <path android:strokeColor="#0088FF" android:strokeWidth="4"
+        android:pathData="M125,90 L135,90 L135,100 L125,100 L135,100 L135,110 L125,110" />
+</vector>

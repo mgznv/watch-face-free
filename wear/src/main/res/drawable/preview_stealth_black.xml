@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preview: Stealth Black – pure black with neon accents -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp" android:height="200dp"
+    android:viewportWidth="200" android:viewportHeight="200">
+    <path android:fillColor="#000000" android:pathData="M100,100 m-100,0 a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0" />
+    <!-- Barely visible outer ring -->
+    <path android:fillColor="#00000000" android:strokeColor="#111111" android:strokeWidth="3"
+        android:pathData="M100,100 m-96,0 a96,96 0 1,0 192,0 a96,96 0 1,0 -192,0" />
+    <!-- Neon cyan hour hand -->
+    <path android:strokeColor="#00FFFF" android:strokeWidth="3" android:strokeLineCap="round"
+        android:pathData="M100,100 L118,60" />
+    <!-- Neon cyan minute hand -->
+    <path android:strokeColor="#00FFFF" android:strokeWidth="2" android:strokeLineCap="round"
+        android:pathData="M100,100 L100,26" />
+    <!-- Neon pink second hand -->
+    <path android:strokeColor="#FF007F" android:strokeWidth="1" android:strokeLineCap="round"
+        android:pathData="M100,112 L100,22" />
+    <!-- Hour dots (neon) -->
+    <path android:fillColor="#00FFFF" android:pathData="M100,14 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" />
+    <path android:fillColor="#00FFFF" android:pathData="M100,184 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+    <path android:fillColor="#00FFFF" android:pathData="M16,100 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+    <path android:fillColor="#00FFFF" android:pathData="M184,100 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+    <path android:fillColor="#00FFFF" android:pathData="M100,100 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+</vector>

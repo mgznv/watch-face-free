@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preview: Trail Run – bold, high contrast, running metrics -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp" android:height="200dp"
+    android:viewportWidth="200" android:viewportHeight="200">
+    <path android:fillColor="#0F1A0A" android:pathData="M100,100 m-100,0 a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0" />
+    <!-- Outer progress ring (pace) -->
+    <path android:fillColor="#00000000" android:strokeColor="#7FFF00" android:strokeWidth="6"
+        android:pathData="M100,16 a84,84 0 0,1 84,84" />
+    <!-- Inner zone ring -->
+    <path android:fillColor="#00000000" android:strokeColor="#FF6B35" android:strokeWidth="4"
+        android:pathData="M100,100 m-72,0 a72,72 0 1,0 144,0 a72,72 0 1,0 -144,0" />
+    <!-- Bold digital time -->
+    <path android:strokeColor="#7FFF00" android:strokeWidth="3"
+        android:pathData="M58,86 L142,86 L142,114 L58,114 Z" />
+    <!-- Step/distance data bottom -->
+    <path android:strokeColor="#7FFF00" android:strokeWidth="1.5"
+        android:pathData="M40,140 L160,140" />
+    <path android:fillColor="#1A3010" android:pathData="M40,144 L96,144 L96,170 L40,170 Z" />
+    <path android:fillColor="#1A3010" android:pathData="M104,144 L160,144 L160,170 L104,170 Z" />
+    <path android:fillColor="#7FFF00" android:pathData="M68,155 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+    <path android:fillColor="#FF6B35" android:pathData="M132,155 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+</vector>

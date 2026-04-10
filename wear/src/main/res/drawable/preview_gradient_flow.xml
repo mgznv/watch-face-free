@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Preview: Gradient Flow – pastel gradient analog -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp" android:height="200dp"
+    android:viewportWidth="200" android:viewportHeight="200">
+    <!-- Gradient approximation with layered circles -->
+    <path android:fillColor="#2D1B69" android:pathData="M100,100 m-100,0 a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0" />
+    <path android:fillColor="#6B3FA0" android:pathData="M100,100 m-70,0 a70,70 0 1,0 140,0 a70,70 0 1,0 -140,0" />
+    <path android:fillColor="#C86DD7" android:pathData="M100,100 m-40,0 a40,40 0 1,0 80,0 a40,40 0 1,0 -80,0" />
+    <path android:fillColor="#E891E0" android:pathData="M100,100 m-15,0 a15,15 0 1,0 30,0 a15,15 0 1,0 -30,0" />
+    <!-- Thin white hands -->
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="2" android:strokeLineCap="round"
+        android:pathData="M100,100 L116,58" />
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="1.5" android:strokeLineCap="round"
+        android:pathData="M100,100 L100,26" />
+    <path android:strokeColor="#FFD4F8" android:strokeWidth="1" android:strokeLineCap="round"
+        android:pathData="M100,110 L100,22" />
+    <path android:fillColor="#FFFFFF" android:pathData="M100,100 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+</vector>

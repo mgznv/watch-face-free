@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shared wallpaper metadata required by all WatchFaceService entries. -->
+<wallpaper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/app_name" />
